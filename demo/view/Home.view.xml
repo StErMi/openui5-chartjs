@@ -1,0 +1,138 @@
+<mvc:View controllerName="ChartJS.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:lab="ChartJS.control"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<IconTabBar
+						expanded="true"
+						class="sapUiResponsiveContentPadding">
+						<items>
+							
+							<IconTabFilter
+								text="Line Chart">
+									<lab:LineChartJS
+										id="line_chart"
+										datasets="{temp>/lineChart/datasets}"
+										labels="{temp>/lineChart/labels}"
+										titleDisplay="true"
+										titleText="culo"
+										onLegendItemClick="onLegendItemClick"
+										onLegendItemHover="onLegendItemHover"
+										onClick="onClick"
+										onHover="onHover"
+										tooltipEnabled="true"
+										onAnimationProgress="onAnimationProgress"
+										onAnimationComplete="onAnimationComplete"
+										showLines="true"
+										spanGaps="true">
+									</lab:LineChartJS>
+							</IconTabFilter>
+							
+							<IconTabFilter
+								text="Bar Chart">
+									<lab:BarChartJS
+										id="bar_chart"
+										datasets="{temp>/barChart/datasets}"
+										labels="{temp>/barChart/labels}"
+										titleDisplay="true"
+										titleText="culo"
+										onLegendItemClick="onLegendItemClick"
+										onLegendItemHover="onLegendItemHover"
+										onClick="onClick"
+										onHover="onHover"
+										tooltipEnabled="true"
+										onAnimationProgress="onAnimationProgress"
+										onAnimationComplete="onAnimationComplete"
+										isHorizontal="false">
+									</lab:BarChartJS>
+							</IconTabFilter>
+							
+							<IconTabFilter
+								text="Radar Chart">
+								<lab:RadarChartJS
+									id="radar_chart"
+									datasets="{temp>/radarChart/datasets}"
+									labels="{temp>/radarChart/labels}"
+									titleDisplay="true"
+									titleText="culo"
+									onLegendItemClick="onLegendItemClick"
+									onLegendItemHover="onLegendItemHover"
+									onClick="onClick"
+									onHover="onHover"
+									tooltipEnabled="true"
+									onAnimationProgress="onAnimationProgress"
+									onAnimationComplete="onAnimationComplete">
+								</lab:RadarChartJS>
+							</IconTabFilter>
+							
+							<IconTabFilter
+								text="Plot Area Chart">
+								<lab:PolarAreaChartJS
+									id="polar_area_chart"
+									datasets="{temp>/polarAreaChart/datasets}"
+									labels="{temp>/polarAreaChart/labels}"
+									titleDisplay="true"
+									titleText="culo"
+									onLegendItemClick="onLegendItemClick"
+									onLegendItemHover="onLegendItemHover"
+									onClick="onClick"
+									onHover="onHover"
+									tooltipEnabled="true"
+									onAnimationProgress="onAnimationProgress"
+									onAnimationComplete="onAnimationComplete">
+								</lab:PolarAreaChartJS>
+							</IconTabFilter>
+							
+							<IconTabFilter
+								text="Pie Chart">
+								<lab:PieChartJS
+									id="pie_chart"
+									datasets="{temp>/pieChart/datasets}"
+									labels="{temp>/pieChart/labels}"
+									titleDisplay="true"
+									titleText="culo"
+									onLegendItemClick="onLegendItemClick"
+									onLegendItemHover="onLegendItemHover"
+									onClick="onClick"
+									onHover="onHover"
+									tooltipEnabled="true"
+									onAnimationProgress="onAnimationProgress"
+									onAnimationComplete="onAnimationComplete">
+								</lab:PieChartJS>
+							</IconTabFilter>
+							
+							<IconTabFilter
+								text="Bubble Chart">
+								<lab:BubbleChartJS
+									id="bubble_chart"
+									datasets="{temp>/bubbleChart/datasets}"
+									labels="{temp>/bubbleChart/labels}"
+									titleDisplay="true"
+									titleText="culo"
+									onLegendItemClick="onLegendItemClick"
+									onLegendItemHover="onLegendItemHover"
+									onClick="onClick"
+									onHover="onHover"
+									tooltipEnabled="true"
+									onAnimationProgress="onAnimationProgress"
+									onAnimationComplete="onAnimationComplete">
+								</lab:BubbleChartJS>
+							</IconTabFilter>
+							
+						</items>
+					</IconTabBar>
+					
+				</content>
+				<!--<footer>-->
+				<!--	<Toolbar>-->
+				<!--		<ToolbarSpacer/>-->
+				<!--		<Button text="Change Datasets" type="Accept" press="onChangeDatasets" />-->
+				<!--		<Button text="Trigger Update" type="Accept" press="onTriggerUpdate" />-->
+				<!--	</Toolbar>-->
+				<!--</footer>-->
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
