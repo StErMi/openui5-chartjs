@@ -12,6 +12,10 @@ Why I choosed ChartJS?
  - Responsive: redraws charts on window resize for perfect scale granularity
  - Huge and detailed [documentation](http://www.chartjs.org/docs/)
 
+## Demo
+
+[Here](https://stermi.github.io/openui5-chartjs/test/demo/) you can find a complete demo of all chart types.
+
 ## TODO
 
 - [ ] Upgrade to ChartJS 2.7.17
@@ -677,7 +681,3 @@ animationAnimateScale | Boolean | true | If true, will animate scaling the chart
 #### Events
 
 None
-
-## Demo
-
-[Here](https://stermi.github.io/openui5-chartjs/test/demo/) you can find a complete demo of all chart types.
