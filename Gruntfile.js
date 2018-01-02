@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-openui5');
 	grunt.loadNpmTasks('grunt-eslint');
-    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Server task
 	grunt.registerTask('serve', function(target) {

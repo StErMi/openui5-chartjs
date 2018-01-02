@@ -7,7 +7,7 @@ sap.ui.define([
 	"use strict";
 	
 	/**
-	 * Constructor for a new Chart.
+	 * BaseChart class, it contains all the common properties, methods and events of a Chart
 	 *
 	 * @param {string} [sId] id for the new control, generated automatically if no id is given 
 	 * @param {object} [mSettings] initial settings for the new control
@@ -22,7 +22,7 @@ sap.ui.define([
 	 * @since 1.40
 	 * @name it.designfuture.chartjs.BaseChartJS
 	 */
-	var BaseChartJS =  Control.extend("it.designfuture.chartjs.BaseChartJS", {
+	var BaseChartJS =  Control.extend("it.designfuture.chartjs.BaseChartJS", /** @lends sap.m.BaseChartJS.prototype */ {
 		
 		__ctx: undefined,
 		__chart: undefined,
@@ -921,7 +921,7 @@ sap.ui.define([
 		//////////////////////////////////////////////
 		
 		
-		/*
+		/**
 		* Update Chart Datasets
 		* @public
 		* @param {object} oDatasets - Chart Datasets
@@ -931,7 +931,7 @@ sap.ui.define([
 			this.updateChart();
 		},
 		
-		/*
+		/**
 		* Update Chart Labels
 		* @public
 		* @param {object} oLabels - Chart Labels
@@ -941,7 +941,7 @@ sap.ui.define([
 			this.updateChart();
 		},
 		
-		/*
+		/**
 		* Set the Chart Hover Mode
 		* @public
 		* @param {string} sHoverMode - Hover mode
@@ -950,7 +950,7 @@ sap.ui.define([
 			this.setProperty("hoverMode", sHoverMode, true);
 		},
 		
-		/*
+		/**
 		* Use this to destroy any chart instances that are created. 
 		* This will clean up any references stored to the chart object within Chart.js, along with any associated event listeners attached by Chart.js. 
 		* This must be called before the canvas is reused for a new chart.
@@ -962,7 +962,7 @@ sap.ui.define([
 			}
 		},
 		
-		/*
+		/**
 		* Triggers an update of the chart. This can be safely called after replacing the entire data object. 
 		* This will update all scales, legends, and then re-render the chart.
 		* @public
@@ -975,7 +975,7 @@ sap.ui.define([
 			}
 		},
 		
-		/*
+		/**
 		* Reset the chart to it's state before the initial animation. A new animation can then be triggered using update.
 		* @public
 		*/
@@ -985,7 +985,7 @@ sap.ui.define([
 			}
 		},
 		
-		/*
+		/**
 		* Reset the chart to it's state before the initial animation. A new animation can then be triggered using update.
 		* @public
 		* @param {int} iDuration - Time for the animation of the redraw in milliseconds
@@ -997,7 +997,7 @@ sap.ui.define([
 			}
 		},
 		
-		/*
+		/**
 		* Use this to stop any current animation loop. This will pause the chart during any current animation frame. Call .render() to re-animate.
 		* @public
 		* @returns {object} Returns 'this' for chainability
@@ -1009,7 +1009,7 @@ sap.ui.define([
 			return this;
 		},
 		
-		/*
+		/**
 		* Use this to manually resize the canvas element. 
 		* This is run each time the canvas container is resized, but you can call this method manually if you change the size of the canvas nodes container element.
 		* @public
@@ -1022,7 +1022,7 @@ sap.ui.define([
 			return this;
 		},
 		
-		/*
+		/**
 		* Will clear the chart canvas. Used extensively internally between animation frames, but you might find it useful.
 		* @public
 		* @returns {object} Returns 'this' for chainability
@@ -1034,7 +1034,7 @@ sap.ui.define([
 			return this;
 		},
 		
-		/*
+		/**
 		* This returns a base 64 encoded string of the chart in it's current state.
 		* @public
 		* @returns {object} Returns png data url of the image on the canvas
@@ -1046,7 +1046,7 @@ sap.ui.define([
 			return null;
 		},
 		
-		/*
+		/**
 		* Calling getElementAtEvent(event) on your Chart instance passing an argument of an event, or jQuery event, 
 		* will return the single element at the event position. If there are multiple items within range, only the first is returned
 		* @public
@@ -1060,7 +1060,7 @@ sap.ui.define([
 			return null;
 		},
 		
-		/*
+		/**
 		* Looks for the element under the event point, then returns all elements at the same data index. This is used internally for 'label' mode highlighting.
 		* Calling getElementsAtEvent(event) on your Chart instance passing an argument of an event, or jQuery event, 
 		* will return the point elements that are at that the same position of that event.
@@ -1075,7 +1075,7 @@ sap.ui.define([
 			return null;
 		},
 		
-		/*
+		/**
 		* Looks for the element under the event point, then returns all elements from that dataset. This is used internally for 'dataset' mode highlighting
 		* @public
 		* @param {object} oEvent - Event or jQuery Event
@@ -1088,7 +1088,7 @@ sap.ui.define([
 			return null;
 		},
 		
-		/*
+		/**
 		* Looks for the dataset that matches the current index and returns that metadata. This returned data has all of the metadata that is used to construct the chart.
 		* @public
 		* @param {int} iIndex - Index
@@ -1104,7 +1104,7 @@ sap.ui.define([
 	});
 
 
-	/*
+	/**
 	* Override the exit method to free local resources and destroy 
 	* @public
 	*/	
