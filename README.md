@@ -154,6 +154,8 @@ A line chart is a way of plotting data points on a line. Often, it is used to sh
 
 #### XML Example
 
+![Line Chart Example](https://stermi.github.io/openui5-chartjs/images/line_chart.PNG)
+
 ```xml
 <lab:LineChartJS
 	id="line_chart"
@@ -260,6 +262,8 @@ A bar chart provides a way of showing data values represented as vertical bars. 
 
 #### XML Example
 
+![Bar Chart Example](https://stermi.github.io/openui5-chartjs/images/bar_chart.PNG)
+
 ```xml
 <lab:BarChartJS
 	id="bar_chart"
@@ -350,6 +354,8 @@ They are often useful for comparing the points of two or more different data set
 - [Documentation](http://www.chartjs.org/docs/latest/charts/radar.html) 
 
 #### XML Example
+
+![Radar Chart Example](https://stermi.github.io/openui5-chartjs/images/radar_chart.PNG)
 
 ```xml
 <lab:RadarChartJS
@@ -448,6 +454,8 @@ They are often useful for comparing the points of two or more different data set
 
 #### XML Example
 
+![Pie Chart Example](https://stermi.github.io/openui5-chartjs/images/pie_chart.PNG)
+
 ```xml
 <lab:PieChartJS
 	id="pie_chart"
@@ -528,6 +536,8 @@ This type of chart is often useful when we want to show a comparison data simila
 - [Documentation](http://www.chartjs.org/docs/latest/charts/polar.html) 
 
 #### XML Example
+
+![Polar Chart Example](https://stermi.github.io/openui5-chartjs/images/plot_chart.PNG)
 
 ```xml
 <lab:PolarAreaChartJS
@@ -613,6 +623,8 @@ A bubble chart is used to display three dimensions of data at the same time. The
 - [Documentation](http://www.chartjs.org/docs/latest/charts/bubble.html) 
 
 #### XML Example
+
+![Bubble Chart Example](https://stermi.github.io/openui5-chartjs/images/bubble_chart.PNG)
 
 ```xml
 <lab:BubbleChartJS
