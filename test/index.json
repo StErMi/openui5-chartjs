@@ -1,0 +1,27 @@
+{
+	"it.designfuture.chartjs": {
+        "icon": "sap-icon://appointment",
+        "name": "OpenUI5 ChartJS",
+		"description": "openui5-chartjs is a custom OpenUI5 library that wraps Chart.js" ,
+		"source": "https://github.com/StErMi/openui5-chartjs",
+		"documentation": "https://github.com/StErMi/openui5-chartjs/blob/master/README.md",
+		"demo": "https://stermi.github.io/openui5-chartjs/test/demo/",
+		"version": "0.0.1",
+		"license": "Apache 2.0",
+		"content": {
+			"OpenUI5ChartJS": {
+				"id": "OpenUI5ChartJS",
+				"name": "OpenUI5 ChartJS",
+				"type": "control",
+				"version": "0.0.1",
+				"description": "openui5-chartjs is a custom OpenUI5 library that wraps Chart.js",
+				"samples": [{
+					"id": "OpenUI5ChartJS",
+					"name": "OpenUI5 ChartJS",
+					"description": "openui5-chartjs is a custom OpenUI5 library that wraps Chart.js",
+					"url": "https://stermi.github.io/openui5-chartjs/test/demo/"
+				}]
+			}
+		}
+	}
+}
