@@ -1,6 +1,6 @@
 {
 	"it.designfuture.chartjs": {
-        "icon": "sap-icon://appointment",
+        "icon": "sap-icon://area-chart",
         "name": "OpenUI5 ChartJS",
 		"description": "openui5-chartjs is a custom OpenUI5 library that wraps Chart.js" ,
 		"source": "https://github.com/StErMi/openui5-chartjs",
