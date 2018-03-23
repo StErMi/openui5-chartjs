@@ -928,6 +928,9 @@ sap.ui.define([
 		*/
 		setDatasets: function(oDatasets) {
 			this.setProperty("datasets", oDatasets, true);
+			if ( this.__chart ) {
+				this.__chart.data.datasets = oDatasets;
+			}
 			this.updateChart();
 		},
 		
@@ -938,6 +941,9 @@ sap.ui.define([
 		*/
 		setLabels: function(oLabels) {
 			this.setProperty("labels", oLabels, true);
+			if ( this.__chart ) {
+				this.__chart.data.labels = oLabels;
+			}
 			this.updateChart();
 		},
 		
