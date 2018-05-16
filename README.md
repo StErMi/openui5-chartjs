@@ -23,7 +23,7 @@ Why I choosed ChartJS?
 - [ ] Cover all Chart types
 - [ ] Refactor code and add more options
 
-## Supported Chat Types
+## Supported Chart Types
 ChartJS support 8 chart types:
 
  - Line
