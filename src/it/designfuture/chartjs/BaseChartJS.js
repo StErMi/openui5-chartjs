@@ -806,6 +806,9 @@ sap.ui.define([
 				mode: this.getHoverMode(),
 				intersect: this.getHoverIntersect(),
 				animationDuration: this.getHoverAnimationDuration(),
+				onHover: function(event, activeElements) {
+					that.fireOnHover({ event, activeElements });
+				},
 			};
 			
 			var animationOptions = {
